@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --border-color: #e3e5e4;
+  --background-color: #c3c7ca;
+  --text-color: #34444f;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  margin: 0;
+
+  font-family: 'Lato', sans-serif;
+  background-color: #eee;
+  color: #444;
+  text-align: center;
+}
+
+ul {
+  width: 300px;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  height: 40px;
+  font-size: 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #666;
+  border-left-width: 5px;
+}
+
+/* only for list show right and wrong items */
+ul li.final-list-li {
+  border: none;
+  /* border-left: 5px solid #666; */
+  margin-top: 3px;
+}
+
+ul li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  /* border: 1px solid green; */
+}
+
+ul li span:first-child {
+  width: 15%;
+}
+
+ul li span:last-child {
+  width: 85%;
+  justify-content: flex-start;
+  padding-left: 5px;
+}
+
+/* to show the listItem meant to be at position */
+ul li p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 10px;
+  height: 40px;
+  width: 85%;
+  padding: 2px;
+}
+
+ul li p span:first-child, ul li p span:last-child {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  color: red;
+}
+
+ul li p span:first-child { font-size: 18px; color: red; }
+
+ul li p span:last-child { font-size: 13px; color: green;}
+
+.wrong {
+  background-color: crimson;
+}
+
+.right {
+  background-color: lightgreen;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.title h1 {
+  font-size: 20px;
+}
+
+.title .time {
+  display: none;
+  font-size: 23px;
+}
+
+
+
+.content {
+  width: 60%;
+}
+
+.content p {
+  padding: 5px;
+  font-size: 20px;
+}
+
+.content button {
+  display: inline-block;
+  width: 120px;
+  padding: 10px;
+  border: none;
+  background-color: crimson;
+  color: #fff;
+  margin-top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+
+ul.list {
+  display: none;
+}
+
+p.list-desc {
+  display: none;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+
+.draggable-list {
+  display: none;
+}
+
+.draggable-list li.over {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.check-btn {
+  background-color: var(--background-color);
+  border: none;
+  color: var(--text-color);
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 5px;
+
+  display: none;
+}
+
+.check-btn:hover {
+  transform: scale(0.98);
+}

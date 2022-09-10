@@ -10,9 +10,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>10 Richest People</h1>
-  <p>Drag and drop the items into their corresponding spots</p>
+  <div class="title">
+    <h1>Drag-Drop Memory Game</h1>
+    <span class="time">10 seconds left</span>
+  </div>
 
+  <!-- First view -->
+  <div id="content" class="content">
+    <h2>HOW TO PLAY</h2>
+    <p>You are given a list of words and you are to memorize the order of appearance of each word. Then after the list is reshuffled and you are to drag and drop each word according to the order of words from the previous arrangement.</p>
+    <button id="start">START</button>
+  </div>
+
+  <!-- 10 Random Words -->
+  <!-- Second view and Fourth view -->
+  <p class="list-desc">Memorize the order of each word in this list</p>
+  <ul class="list"></ul>
+
+  <!-- Third view -->
+  <p class="list-desc">Drag words in list to correct position.</p>
   <ul class="draggable-list" id="draggable-list"></ul>
   <button class="check-btn" id="check">
     Check Order
@@ -22,5 +38,3 @@
   <script src="logic.js"></script>
 </body>
 </html>
-
-<!-- Illustration by <a href="https://icons8.com/illustrations/author/ARh4OKrFtdfC">Pixeltrue</a> from <a href="https://icons8.com/illustrations">Ouch!</a> -->

@@ -1,2 +1,2 @@
 # Drag-Drop-Game
-It is a fun memory game. You are given a list of words and you are to memorize the order of appearance of each word in less than 5 seconds or more, and then the list is reshuffled and you must rearrange the words in the list according to the memorized order.
+You are given a list of words and you are to memorize the order of appearance of each word. Then after the list is reshuffled and you are to drag and drop each word according to the order of words from the previous arrangement.
